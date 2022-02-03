@@ -10,16 +10,14 @@ import {
   ProfileCard,
   Label,
   Quantity,
-} from "./user.styled";
+} from "./User.styled";
 
 export default function UserData({
   avatar,
   userName,
   tag,
   location,
-  followers,
-  views,
-  likes,
+  stats: { followers, views, likes },
 }) {
   return (
     <Profile>
@@ -52,7 +50,4 @@ UserData.propTypes = {
   username: PropTypes.string,
   tag: PropTypes.string,
   location: PropTypes.string,
-  followers: PropTypes.number,
-  views: PropTypes.number,
-  likes: PropTypes.number,
 };

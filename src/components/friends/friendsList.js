@@ -1,15 +1,15 @@
-import FriendListItem from "./friendListItem";
-import { Item } from "./friends.styled";
+import FriendListItem from "./FriendListItem";
+import { Item } from "./Friends.styled";
 
 export default function FriendList({ friends }) {
   return (
     <Item>
-      {friends.map((friend) => (
+      {friends.map(({ id, name, avatar, isOnline }) => (
         <FriendListItem
-          key={friend.id}
-          name={friend.name}
-          avatar={friend.avatar}
-          isOnline={friend.isOnline}
+          key={id}
+          name={name}
+          avatar={avatar}
+          isOnline={isOnline}
         />
       ))}
     </Item>
