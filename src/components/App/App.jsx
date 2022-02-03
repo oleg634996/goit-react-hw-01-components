@@ -20,9 +20,9 @@ export default function App() {
         location={location}
         
       />
-      <Statistics title="Upload stats" stats={data} />;
-      <FriendList friends={friends} />;
-      <TransactionHistory items={transactions} />;
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </Container>
   );
 }
